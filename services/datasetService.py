@@ -303,11 +303,7 @@ dados = [
     ("boca ressecada olhos secos crônicos cansaço dor articular", "sindrome_sjogren"),
 ]
 
-
-
 # criar uma funcao e colocar os dados acima em um DataFrame Pandas
 def dataset_completo():
     df = pd.DataFrame(dados, columns=["sintomas", "diagnostico"])
     return df
-
-print(dataset_completo())
