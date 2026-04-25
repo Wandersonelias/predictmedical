@@ -1,5 +1,5 @@
 from services.datasetService import dataset_completo
-
+from services.vetorizacaService import vetorizacao, encode_target
 #Exibir data 
 
 
@@ -7,10 +7,10 @@ from services.datasetService import dataset_completo
 def imprimir_dados():
     print("Dados")
     df = dataset_completo()
-    return df
+    return df["diagnostico"].value_counts()
 
 
-imprimir_dados()
+print(encode_target())
 
 if __name__ == "__main__":
     print("Wanderson Elias")
